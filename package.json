@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "metro-config": "^0.80.3",
+    "prettier": "3.1.1"
+  }
+}
