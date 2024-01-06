@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
 
 const HomePageButton = (props) => {
     // eslint-disable-next-line react/prop-types
@@ -8,7 +8,9 @@ const HomePageButton = (props) => {
 
     return (
         <View style={container}>
-            <Text style={buttonText}> { buttonName } </Text>
+            <TouchableOpacity>
+              <Text style={buttonText}> { buttonName } </Text>
+            </TouchableOpacity>
         </View>
     )
 }

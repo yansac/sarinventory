@@ -16,7 +16,7 @@ const HomeComponent = () => {
       <HomePageButton buttonName = {"Prices"}/>
       <HomePageButton buttonName = {"Debt"}/>
 
-      <View>
+      <View style = {styles.container2}>
         <TouchableOpacity style={styles.button1}>
           <Text style={styles.buttonText}>S</Text>
         </TouchableOpacity>
@@ -34,6 +34,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0
+  },
+
+  container2: {
+    flex: 1,
+    flexDirection: 'row'
   },
 
   button1: {
@@ -60,7 +65,6 @@ const styles = StyleSheet.create({
     marginLeft: 'auto',
     marginRight: 'auto',
   },
-
 
   buttonText: {
     fontWeight: 'bold',
