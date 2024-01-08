@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native';
-import HomePageButton from '../components/HomeButton';
+import React from 'react'
+import { StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native'
+import HomePageButton from '../components/HomeButton'
 
 const HomeComponent = () => {
   return (
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     height: '15%',
     width: '30%',
     marginLeft: 'auto',
-    marginRight: 'auto',
+    marginRight: 'auto'
   },
 
   title: {
