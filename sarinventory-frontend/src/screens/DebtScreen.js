@@ -1,7 +1,7 @@
 import React from "react"
 import { View, Text } from "react-native"
 
-const SuppliersScreen = () => {
+const DebtScreen = () => {
     return (
         <View>
             <Text>
@@ -11,4 +11,4 @@ const SuppliersScreen = () => {
     )
 }
 
-export default SuppliersScreen
+export default DebtScreen

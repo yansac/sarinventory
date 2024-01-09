@@ -15,6 +15,12 @@ const DATA = [
         item_name: 'Lay Chips Original',
         stock: 0
     },
+
+    {
+        item_id: 3,
+        item_name: 'Hansel Mocha',
+        stock: 6
+    }
 ]
 
 const InventoryScreen = () => {
@@ -62,13 +68,13 @@ const styles = StyleSheet.create ({
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
         backgroundColor: 'light-blue'
-      },
+    },
 
-      header: {
+    header: {
         flexDirection: 'row'
-      },
+    },
 
-      button: {
+    button: {
         alignItems: 'center',
         backgroundColor: '#000080',
         marginLeft: 'auto',
