@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native'
 import HomePageButton from '../components/HomeButton'
 
-const HomeComponent = () => {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
 
@@ -73,5 +73,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeComponent;
+export default HomeScreen;
 

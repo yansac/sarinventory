@@ -3,11 +3,12 @@ import { StyleSheet, View } from 'react-native';
 // import HomeScreen from "./src/screens/HomeScreen"
 import InventoryScreen from './src/screens/InventoryScreen';
 import SuppliersScreen from './src/screens/SuppliersScreen';
+import HomeScreen from './src/screens/HomeScreen';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <InventoryScreen />
+      <HomeScreen />
     </View>
   );
 }
