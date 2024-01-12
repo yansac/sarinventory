@@ -2,6 +2,7 @@ import React from "react"
 import { SafeAreaView, Button } from "react-native"
 import Input from "../components/Input"
 
+
 const AddItem = () => {
 
     return (

@@ -1,6 +1,7 @@
 import React from "react"
 import { Text, FlatList, SafeAreaView, StyleSheet, StatusBar, View, TouchableOpacity } from "react-native"
 import InventoryItem from "../components/InventoryItem"
+import EmptyComponent from "../components/EmptyComponent";
 import { Feather } from '@expo/vector-icons';
 
 const DATA = [
@@ -57,6 +58,11 @@ const InventoryScreen = () => {
                     data = {DATA}
                     renderItem = { renderItem }
                     keyExtractor={ (item) => item.id }
+                    ListEmptyComponent={
+                        <EmptyComponent
+                            listType={' an item'}
+                        />
+                    }
                 />
             </View>
         </SafeAreaView>
