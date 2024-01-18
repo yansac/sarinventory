@@ -5,7 +5,7 @@ const EmptyComponent = (props) => {
     const { listType } = props
     return (
         <View>
-            <Text>Your list is empty please add {listType}</Text>
+            <Text>Your inventory is empty please add {listType}</Text>
         </View>
     )
 }

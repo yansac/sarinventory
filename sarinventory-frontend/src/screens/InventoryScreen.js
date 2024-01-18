@@ -72,8 +72,10 @@ const InventoryScreen = () => {
 const styles = StyleSheet.create ({
     container: {
         flex: 1,
+        alignSelf: 'stretch',
+        marginHorizontal: 20,
         marginTop: StatusBar.currentHeight || 0,
-        backgroundColor: 'light-blue'
+        backgroundColor: 'light-blue',
     },
 
     header: {
@@ -81,10 +83,9 @@ const styles = StyleSheet.create ({
     },
 
     button: {
-        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'flex-end',
         backgroundColor: '#000080',
-        marginLeft: 'auto',
-        marginRight: 'auto'
     }
 })
 

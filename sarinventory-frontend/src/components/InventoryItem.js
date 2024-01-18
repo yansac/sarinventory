@@ -4,42 +4,48 @@ import { Feather } from '@expo/vector-icons';
 
 const InventoryItem = (props) => {
     const { item_name, stock } = props
-    const { item, itemName, button } = styles
+    const { item, itemName, stockSize, button } = styles
 
     return (
         <View style={item}>
             <View>
                 <Text style={itemName}>{item_name}</Text>
-                <Text style={itemName}>Remaining Stock: {stock}</Text>
+                <Text style={stockSize}>Remaining Stock: {stock}</Text>
             </View>
 
-            <TouchableOpacity style={button}>
-                <Feather name="edit" size={24} color="white"/>
-            </TouchableOpacity>        
-            </View>
+            <View>
+                <TouchableOpacity style={button}>
+                    <Feather name="edit" size={24} color="white"/>
+                </TouchableOpacity>  
+            </View>      
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     item: {
-        padding: 25,
+        display: 'flex',
+        padding: 15,
         marginVertical: 5,
-        marginHorizontal: 34,
+        marginHorizontal: 5,
         flexDirection: 'row',
         backgroundColor: 'blue'
       },
 
     itemName: {
         color: 'beige',
-        fontSize: 26,
+        fontSize: 25,
         textAlign: 'left'
     },
 
+    stockSize: {
+        fontSize: 20,
+    },
+
     button: {
-        alignItems: 'center',
-        backgroundColor: '#000080',
-        marginLeft: 'auto',
-        marginRight: 'auto'
+        display: 'flex',
+        justifyContent: 'flex-end',
+        backgroundColor: "#000080"
     }
 })
 
